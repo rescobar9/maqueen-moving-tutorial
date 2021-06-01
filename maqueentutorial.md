@@ -54,10 +54,11 @@ basic.forever(function () {
 ## Step 7
 Connect the Micro:bit to the USB port on your computer. Then click on ``||LED:Download||`` (Make sure that you download the file to the Micro:bit drive")
 ```blocks
-let Temperature = 0
+let light_level = 0
+radio.setGroup(1)
 basic.forever(function () {
-    Temperature = input.temperature()
-    basic.showNumber(Temperature)
+    light_level = input.lightLevel()
+    radio.sendNumber(light_level)
 })
 ```
 ## Step 8
