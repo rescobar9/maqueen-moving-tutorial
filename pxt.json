@@ -1,5 +1,5 @@
 {
-    "name": "Maqueen  Moving Tutorial",
+    "name": "Radio Signal Transmiter Tutorial",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -10,7 +10,8 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "maqueentutorial.md"
     ],
     "testFiles": [
         "test.ts"
